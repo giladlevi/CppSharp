@@ -159,6 +159,8 @@ namespace CppSharp
 
         #region Generator options
 
+        public bool IgnoreNotImplemenedCtors=false;
+
         public GeneratorKind GeneratorKind;
 
         public bool CheckSymbols;

@@ -438,9 +438,19 @@ namespace CppSharp.Generators.CSharp
             if (@class.IsGenerated)
             {
                 var functions = GatherClassInternalFunctions(@class);
-
                 foreach (var function in functions)
-                    GenerateInternalFunction(function);
+                {
+                    // Ignore auto generated DllImports of not Implemened Ctors (and functions at all)
+                    if (Options.IgnoreNotImplemenedCtors)
+                    {
+                      if (Context.Symbols.Symbols.ContainsKey(function.Mangled))
+                        GenerateInternalFunction(function);
+                    }
+                    else
+                    {
+                      GenerateInternalFunction(function);
+                    }
+                }
             }
 
             TypePrinter.PopContext();
@@ -1804,8 +1814,16 @@ namespace CppSharp.Generators.CSharp
             {
                 if (ASTUtils.CheckIgnoreMethod(ctor, Options))
                     continue;
-
-                GenerateMethod(ctor, @class);
+                // Ignore auto generate body methods of not implemented c'tors. excpet default c'tors
+                if (Options.IgnoreNotImplemenedCtors)
+                {
+                    if (ctor.Access == AccessSpecifier.Public || Context.Symbols.Symbols.ContainsKey(ctor.Mangled))
+                        GenerateMethod(ctor, @class);
+                }
+                else
+                {
+                    GenerateMethod(ctor, @class);
+                }
             }
 
             if (@class.IsRefType)
@@ -1963,9 +1981,17 @@ namespace CppSharp.Generators.CSharp
                 WriteCloseBraceIndent();
                 PopBlock(NewLineKind.BeforeNextBlock);
             }
-
-            GenerateNativeConstructorByValue(@class, ctorCall);
-
+            // Ignore auto generate of not implemented native copy c'tors.
+            if (Options.IgnoreNotImplemenedCtors)
+            {
+                var ctorMethod = @class.FindMethod(ctorCall);
+                if (ctorMethod != null && Context.Symbols.Symbols.ContainsKey(ctorMethod.Mangled))
+                    GenerateNativeConstructorByValue(@class, ctorCall);
+            }
+            else
+            {
+                GenerateNativeConstructorByValue(@class, ctorCall);
+            }
             PushBlock(BlockKind.Method);
             WriteLine("{0} {1}(void* native, bool skipVTables = false){2}",
                 @class.IsAbstractImpl ? "internal" : (@class.IsRefType ? "protected" : "private"),
@@ -2259,7 +2285,16 @@ namespace CppSharp.Generators.CSharp
             {
                 if (method.IsConstructor)
                 {
-                    GenerateInternalFunctionCall(method);
+                    // Ignore struct c'tors that not exist in the libs.
+                    if (Options.IgnoreNotImplemenedCtors)
+                    {
+                        if (Context.Symbols.Symbols.ContainsKey(method.Mangled))
+                            GenerateInternalFunctionCall(method);
+                    }
+                    else
+                    {
+                        GenerateInternalFunctionCall(method);
+                    }
                 }
                 else if (method.IsOperator)
                 {
@@ -2513,7 +2548,18 @@ namespace CppSharp.Generators.CSharp
             if (method.IsCopyConstructor)
             {
                 if (@class.HasNonTrivialCopyConstructor)
-                    GenerateInternalFunctionCall(method);
+                {
+                    if (Options.IgnoreNotImplemenedCtors)
+                    {
+                        // at wanted public c'tors we don't want to call to doesn't exist native entry point.
+                        if (Context.Symbols.Symbols.ContainsKey(method.Mangled))
+                            GenerateInternalFunctionCall(method);
+                    }
+                    else
+                    {
+                        GenerateInternalFunctionCall(method);
+                    }
+                }
                 else
                 {
                     TypePrinter.PushContext(TypePrinterContextKind.Native);
@@ -2526,7 +2572,18 @@ namespace CppSharp.Generators.CSharp
             else
             {
                 if (!method.IsDefaultConstructor || @class.HasNonTrivialDefaultConstructor)
-                    GenerateInternalFunctionCall(method);
+                  {
+                    if (Options.IgnoreNotImplemenedCtors)
+                    {
+                        // at wanted public c'tors we don't want to call to doesn't exist native entry point.
+                        if (Context.Symbols.Symbols.ContainsKey(method.Mangled))
+                            GenerateInternalFunctionCall(method);
+                    }
+                    else
+                    {
+                        GenerateInternalFunctionCall(method);
+                    }
+                  }
             }
 
             GenerateVTableClassSetupCall(@class);
