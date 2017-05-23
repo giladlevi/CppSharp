@@ -96,7 +96,7 @@ namespace CppSharp.Generators.CLI
         }
 
         public override TypePrinterResult VisitParameters(IEnumerable<Parameter> @params,
-            bool hasNames)
+            bool hasNames, bool treatBoolAsSByteFotDelegates = false)
         {
             var args = new List<string>();
 

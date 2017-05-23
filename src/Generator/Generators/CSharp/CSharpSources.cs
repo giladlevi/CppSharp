@@ -541,13 +541,22 @@ namespace CppSharp.Generators.CSharp
             }
         }
 
-        private IEnumerable<string> GatherInternalParams(Function function, out TypePrinterResult retType)
+        private IEnumerable<string> GatherInternalParams(Function function, out TypePrinterResult retType, bool treatBoolAsSByteFotDelegates=false)
         {
             TypePrinter.PushContext(TypePrinterContextKind.Native);
 
             retType = function.ReturnType.CSharpType(TypePrinter);
 
-            var @params = function.GatherInternalParams(Context.ParserOptions.IsItaniumLikeAbi).Select(p =>
+            var paramsCopy = function
+              .GatherInternalParams(Context.ParserOptions.IsItaniumLikeAbi, false, treatBoolAsSByteFotDelegates)
+              .Select(p => new Parameter(p)).ToArray();
+
+            foreach (var p in paramsCopy.Where(paramCopy => paramCopy.Type.IsPrimitiveType() && ((BuiltinType)paramCopy.Type).Type == PrimitiveType.Bool))
+            {
+                p.QualifiedType = new QualifiedType(new BuiltinType(PrimitiveType.Char));
+            }
+
+            var @params = paramsCopy.Select(p =>
                 string.Format("{0} {1}", p.CSharpType(TypePrinter), p.Name)).ToList();
 
             TypePrinter.PopContext();
@@ -1555,7 +1564,8 @@ namespace CppSharp.Generators.CSharp
                 {
                     ReturnType = param.QualifiedType,
                     ReturnVarName = param.Name,
-                    ParameterIndex = i
+                    ParameterIndex = i,
+                    Kind = param.Type.IsPrimitiveType() ? MarshalKind.NativeField : MarshalKind.Unknown,
                 };
 
                 var marshal = new CSharpMarshalNativeToManagedPrinter(ctx) { MarshalsParameter = true };
@@ -1651,7 +1661,7 @@ namespace CppSharp.Generators.CSharp
             }
 
             TypePrinterResult retType;
-            var @params = GatherInternalParams(method, out retType);
+            var @params = GatherInternalParams(method, out retType, treatBoolAsSByteFotDelegates:true);
 
             var vTableMethodDelegateName = GetVTableMethodDelegateName(method);
 
@@ -1659,7 +1669,7 @@ namespace CppSharp.Generators.CSharp
                 Context.Delegates[method].Signature,
                 vTableMethodDelegateName);
             NewLine();
-
+          
             WriteLine("private static {0} {1}Hook({2})", retType, vTableMethodDelegateName,
                 string.Join(", ", @params));
             WriteStartBraceIndent();
@@ -2690,7 +2700,9 @@ namespace CppSharp.Generators.CSharp
                     && !string.IsNullOrWhiteSpace(param.Context.ArgumentPrefix))
                     name.Append(param.Context.ArgumentPrefix);
 
-                name.Append(param.Name);
+                var paramString = param.Param.Type.IsPrimitiveType() && ((BuiltinType)param.Param.Type).Type == PrimitiveType.Bool? $"{param.Name} ? (sbyte)1: (sbyte)0" : param.Name;
+                name.Append(paramString);
+
                 names.Add(name.ToString());
             }
 

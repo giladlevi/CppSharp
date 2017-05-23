@@ -301,7 +301,7 @@ namespace CppSharp.AST
         }
 
         public virtual string VisitParameters(IEnumerable<Parameter> @params,
-            bool hasNames = true)
+            bool hasNames = true, bool treatBoolAsSByteFotDelegates=false)
         {
             var args = new List<string>();
 

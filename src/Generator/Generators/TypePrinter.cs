@@ -201,7 +201,7 @@ namespace CppSharp.Generators
         }
 
         public virtual TypePrinterResult VisitParameters(IEnumerable<Parameter> @params,
-            bool hasNames = true)
+            bool hasNames = true, bool treatBoolAsSByteFotDelegates = false)
         {
             throw new NotImplementedException();
         }

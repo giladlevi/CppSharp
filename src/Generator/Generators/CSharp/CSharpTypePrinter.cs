@@ -688,15 +688,25 @@ namespace CppSharp.Generators.CSharp
         }
 
         public override TypePrinterResult VisitParameters(IEnumerable<Parameter> @params,
-            bool hasNames)
+            bool hasNames, bool treatBoolAsSByteFotDelegates = false)
         {
             var args = new List<string>();
 
-            foreach (var param in @params.Where(
+            var paramsCopy = @params.Select(p => new Parameter(p)).ToArray();
+            if (treatBoolAsSByteFotDelegates)
+            {
+                foreach (var p in paramsCopy.Where(paramCopy => paramCopy.Type.IsPrimitiveType() && ((BuiltinType)paramCopy.Type).Type == PrimitiveType.Bool))
+                {
+                  p.QualifiedType = new QualifiedType(new BuiltinType(PrimitiveType.Char));
+                }
+            }
+
+            foreach (var param in paramsCopy.Where(
                 p => ContextKind == TypePrinterContextKind.Native ||
                     (p.Kind != ParameterKind.IndirectReturnType && !p.Ignore)))
             {
                 TypePrinterContext.Parameter = param;
+
                 args.Add(VisitParameter(param, hasNames).Type);
             }
 
@@ -719,7 +729,7 @@ namespace CppSharp.Generators.CSharp
         {
             return string.Format("delegate {0} {{0}}({1})",
                 function.ReturnType.Visit(this),
-                VisitParameters(function.Parameters, hasNames: true));
+                VisitParameters(function.Parameters, hasNames: true, treatBoolAsSByteFotDelegates:true));
         }
 
         public override string ToString(Type type)
