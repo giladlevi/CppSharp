@@ -1,7 +1,7 @@
 #include "../Tests.h"
-#include <cstdint>
-#include <vector>
-#include <limits>
+//#include <cstdint>
+//#include <vector>
+//#include <limits>
 #include "AnotherUnit.h"
 
 class DLL_API Foo
@@ -19,7 +19,7 @@ public:
     bool isNoParams();
     void setNoParams();
     void foo(int i);
-    void takesStdVector(const std::vector<int>& vector);
+    //void takesStdVector(const std::vector<int>& vector);
     int width();
     void set_width(int value);
 
@@ -396,7 +396,7 @@ public:
     MethodsWithDefaultValues(int a);
     MethodsWithDefaultValues(float a, Zero b = 0);
     MethodsWithDefaultValues(double d, QList<QColor> list = QList<QColor>());
-    MethodsWithDefaultValues(QRect* pointer, float f = 1, int i = std::numeric_limits<double>::infinity());
+    //MethodsWithDefaultValues(QRect* pointer, float f = 1, int i = std::numeric_limits<double>::infinity());
     void defaultPointer(Foo* ptr = 0);
     void defaultVoidStar(void* ptr = 0);
     void defaultValueType(QGenericArgument valueType = QGenericArgument());
@@ -442,7 +442,7 @@ public:
     void defaultWithEnumInLowerCasedNameSpace(lowerCaseNameSpace::Enum e = lowerCaseNameSpace::Enum::Item2);
     void defaultWithCharFromInt(char c = 32);
     void defaultWithFreeConstantInNameSpace(int c = HasFreeConstant::FREE_CONSTANT_IN_NAMESPACE);
-    void defaultWithStdNumericLimits(double d = 1.0, int i = std::numeric_limits<double>::infinity());
+    //void defaultWithStdNumericLimits(double d = 1.0, int i = std::numeric_limits<double>::infinity());
     int DefaultWithParamNamedSameAsMethod(int DefaultWithParamNamedSameAsMethod, const Foo& defaultArg = Foo());
     int getA();
 private:
@@ -582,12 +582,12 @@ public:
 
 #define Q_PROCESSOR_WORDSIZE 8
 template <int> struct QIntegerForSize;
-template <> struct QIntegerForSize<1> { typedef uint8_t  Unsigned; typedef int8_t  Signed; };
-template <> struct QIntegerForSize<2> { typedef uint16_t Unsigned; typedef int16_t Signed; };
-template <> struct QIntegerForSize<4> { typedef uint32_t Unsigned; typedef int32_t Signed; };
-template <> struct QIntegerForSize<8> { typedef uint64_t Unsigned; typedef int64_t Signed; };
-typedef QIntegerForSize<Q_PROCESSOR_WORDSIZE>::Signed qregisterint;
-typedef QIntegerForSize<Q_PROCESSOR_WORDSIZE>::Unsigned qregisteruint;
+//template <> struct QIntegerForSize<1> { typedef uint8_t  Unsigned; typedef int8_t  Signed; };
+//template <> struct QIntegerForSize<2> { typedef uint16_t Unsigned; typedef int16_t Signed; };
+//template <> struct QIntegerForSize<4> { typedef uint32_t Unsigned; typedef int32_t Signed; };
+//template <> struct QIntegerForSize<8> { typedef uint64_t Unsigned; typedef int64_t Signed; };
+//typedef QIntegerForSize<Q_PROCESSOR_WORDSIZE>::Signed qregisterint;
+//typedef QIntegerForSize<Q_PROCESSOR_WORDSIZE>::Unsigned qregisteruint;
 
 struct DLL_API TestPointers
 {
@@ -1179,3 +1179,10 @@ struct StructTestArrayTypeFromTypedef
 
 #define MY_MACRO_TEST_1 '1'
 #define MY_MACRO_TEST_2 '2'
+
+
+class MyBaseClass
+{
+public:
+	virtual void OnSomthingHappen(bool iAmBool) {};
+};

@@ -45,9 +45,9 @@ void Foo::foo(int i)
 {
 }
 
-void Foo::takesStdVector(const std::vector<int>& vector)
-{
-}
+//void Foo::takesStdVector(const std::vector<int>& vector)
+//{
+//}
 
 int Foo::width()
 {
@@ -485,9 +485,9 @@ MethodsWithDefaultValues::MethodsWithDefaultValues(double d, QList<QColor> list)
 {
 }
 
-MethodsWithDefaultValues::MethodsWithDefaultValues(QRect* pointer, float f, int i)
-{
-}
+//MethodsWithDefaultValues::MethodsWithDefaultValues(QRect* pointer, float f, int i)
+//{
+//}
 
 void MethodsWithDefaultValues::defaultPointer(Foo *ptr)
 {
@@ -650,13 +650,13 @@ void MethodsWithDefaultValues::defaultWithCharFromInt(char c)
 {
 }
 
-void MethodsWithDefaultValues::defaultWithFreeConstantInNameSpace(int c)
-{
-}
+//void MethodsWithDefaultValues::defaultWithFreeConstantInNameSpace(int c)
+//{
+//}
 
-void MethodsWithDefaultValues::defaultWithStdNumericLimits(double d, int i)
-{
-}
+//void MethodsWithDefaultValues::defaultWithStdNumericLimits(double d, int i)
+//{
+//}
 
 int MethodsWithDefaultValues::DefaultWithParamNamedSameAsMethod(int DefaultWithParamNamedSameAsMethod, const Foo& defaultArg)
 {

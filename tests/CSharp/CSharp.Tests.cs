@@ -235,7 +235,7 @@ public unsafe class CSharpTests : GeneratorTestFixture
             methodsWithDefaultValues.DefaultWithEnumInLowerCasedNameSpace();
             methodsWithDefaultValues.DefaultWithCharFromInt();
             methodsWithDefaultValues.DefaultWithFreeConstantInNameSpace();
-            methodsWithDefaultValues.DefaultWithStdNumericLimits(10, 5);
+            //methodsWithDefaultValues.DefaultWithStdNumericLimits(10, 5);
             methodsWithDefaultValues.DefaultWithParamNamedSameAsMethod(5);
         }
     }

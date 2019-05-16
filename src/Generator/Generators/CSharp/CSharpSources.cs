@@ -541,14 +541,14 @@ namespace CppSharp.Generators.CSharp
             }
         }
 
-        private IEnumerable<string> GatherInternalParams(Function function, out TypePrinterResult retType, bool treatBoolAsSByteFotDelegates=false)
+        private IEnumerable<string> GatherInternalParams(Function function, out TypePrinterResult retType)
         {
             TypePrinter.PushContext(TypePrinterContextKind.Native);
 
             retType = function.ReturnType.CSharpType(TypePrinter);
 
             var paramsCopy = function
-              .GatherInternalParams(Context.ParserOptions.IsItaniumLikeAbi, false, treatBoolAsSByteFotDelegates)
+              .GatherInternalParams(Context.ParserOptions.IsItaniumLikeAbi, false)
               .Select(p => new Parameter(p)).ToArray();
 
             foreach (var p in paramsCopy.Where(paramCopy => paramCopy.Type.IsPrimitiveType() && ((BuiltinType)paramCopy.Type).Type == PrimitiveType.Bool))
@@ -1661,7 +1661,7 @@ namespace CppSharp.Generators.CSharp
             }
 
             TypePrinterResult retType;
-            var @params = GatherInternalParams(method, out retType, treatBoolAsSByteFotDelegates:true);
+            var @params = GatherInternalParams(method, out retType);
 
             var vTableMethodDelegateName = GetVTableMethodDelegateName(method);
 
@@ -1669,7 +1669,7 @@ namespace CppSharp.Generators.CSharp
                 Context.Delegates[method].Signature,
                 vTableMethodDelegateName);
             NewLine();
-          
+
             WriteLine("private static {0} {1}Hook({2})", retType, vTableMethodDelegateName,
                 string.Join(", ", @params));
             WriteStartBraceIndent();
