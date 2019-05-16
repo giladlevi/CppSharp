@@ -1,0 +1,4 @@
+﻿  CLI.cpp
+     Creating library ..\lib\Debug_x64\CLI.Native.lib and object ..\lib\Debug_x64\CLI.Native.exp
+  CLI.Native.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Debug_x64\CLI.Native.dll
+  CLI.Native.vcxproj -> ..\lib\Debug_x64\CLI.Native.pdb (Full PDB)

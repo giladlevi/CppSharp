@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\Encodings.CSharp.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\Encodings.CSharp.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\Encodings.CSharp\Encodings.CSharp.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\Encodings.CSharp\Encodings.CSharp.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\Encodings.CSharp\Encodings.CSharp.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+﻿  NamespacesDerived.cpp
+c:\git\cppsharp\tests\namespacesderived\NamespacesDerived.h(31): warning C4251: 'Derived::nestedNSComponent': class 'OverlappingNamespace::InBaseLib' needs to have dll-interface to be used by clients of class 'Derived'
+  c:\git\cppsharp\tests\namespacesderived\../NamespacesBase/NamespacesBase.h(15): note: see declaration of 'OverlappingNamespace::InBaseLib'
+     Creating library ..\lib\Release_x64\NamespacesDerived.Native.lib and object ..\lib\Release_x64\NamespacesDerived.Native.exp
+  NamespacesDerived.Native.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Release_x64\NamespacesDerived.Native.dll
+  NamespacesDerived.Native.vcxproj -> ..\lib\Release_x64\NamespacesDerived.Native.pdb (Full PDB)

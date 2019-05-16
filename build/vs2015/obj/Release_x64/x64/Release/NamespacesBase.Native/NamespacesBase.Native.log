@@ -1,0 +1,4 @@
+﻿  NamespacesBase.cpp
+     Creating library ..\lib\Release_x64\NamespacesBase.Native.lib and object ..\lib\Release_x64\NamespacesBase.Native.exp
+  NamespacesBase.Native.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Release_x64\NamespacesBase.Native.dll
+  NamespacesBase.Native.vcxproj -> ..\lib\Release_x64\NamespacesBase.Native.pdb (Full PDB)

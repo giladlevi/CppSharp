@@ -1,0 +1,9 @@
+﻿  Common.cpp
+c:\git\cppsharp\tests\common\common.h(767): warning C4251: 'HasStdString::s': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'HasStdString'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  AnotherUnit.cpp
+  Generating Code...
+c:\git\cppsharp\tests\common\common.cpp(363): warning C4717: 'operator|': recursive on all control paths, function will cause runtime stack overflow
+     Creating library ..\lib\Debug_x64\Common.Native.lib and object ..\lib\Debug_x64\Common.Native.exp
+  Common.Native.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Debug_x64\Common.Native.dll
+  Common.Native.vcxproj -> ..\lib\Debug_x64\Common.Native.pdb (Full PDB)

@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Generator.Tests.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Generator.Tests.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Generator.Tests\CppSharp.Generator.Tests.csprojResolveAssemblyReference.cache
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Generator.Tests\CppSharp.Generator.Tests.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Generator.Tests\CppSharp.Generator.Tests.pdb

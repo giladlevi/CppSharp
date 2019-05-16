@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Runtime.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Runtime.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Runtime\CppSharp.Runtime.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Runtime\CppSharp.Runtime.pdb
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Runtime\CppSharp.Runtime.csproj.CoreCompileInputs.cache

@@ -1,0 +1,7 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Parser.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Parser.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Parser\CppSharp.Parser.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Parser\CppSharp.Parser.pdb
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Parser\CppSharp.Parser.csprojAssemblyReference.cache
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Parser\CppSharp.Parser.csproj.CoreCompileInputs.cache
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Parser\CppSharp.Parser.csproj.CopyComplete

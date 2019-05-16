@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\NamespacesDerived.Gen.exe
+C:\git\CppSharp\build\vs2015\lib\Release_x32\NamespacesDerived.Gen.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\NamespacesDerived.Gen\NamespacesDerived.Gen.csprojResolveAssemblyReference.cache
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\NamespacesDerived.Gen\NamespacesDerived.Gen.exe
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\NamespacesDerived.Gen\NamespacesDerived.Gen.pdb

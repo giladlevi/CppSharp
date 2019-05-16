@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Debug_x64\CppSharp.dll
+C:\git\CppSharp\build\vs2015\lib\Debug_x64\CppSharp.pdb
+C:\git\CppSharp\build\vs2015\obj\Debug_x64\x64\Debug\CppSharp\CppSharp.csprojResolveAssemblyReference.cache
+C:\git\CppSharp\build\vs2015\obj\Debug_x64\x64\Debug\CppSharp\CppSharp.dll
+C:\git\CppSharp\build\vs2015\obj\Debug_x64\x64\Debug\CppSharp\CppSharp.pdb

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6403AF81-50E7-6FD7-B947-6A2AA54A5A59}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CppSharp.CppParser</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\lib\Debug_x32\</OutDir>
+    <IntDir>..\obj\Debug_x32\x32\Debug\CppSharp.CppParser\</IntDir>
+    <TargetName>CppSharp.CppParser</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\lib\Debug_x64\</OutDir>
+    <IntDir>..\obj\Debug_x64\x64\Debug\CppSharp.CppParser\</IntDir>
+    <TargetName>CppSharp.CppParser</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\lib\Release_x32\</OutDir>
+    <IntDir>..\obj\Release_x32\x32\Release\CppSharp.CppParser\</IntDir>
+    <TargetName>CppSharp.CppParser</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\lib\Release_x64\</OutDir>
+    <IntDir>..\obj\Release_x64\x64\Release\CppSharp.CppParser\</IntDir>
+    <TargetName>CppSharp.CppParser</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WINDOWS;DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\tools\clang\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\tools\clang\lib;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\build\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\build\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd4267 /wd4146 /wd4244 /wd4800 /wd4345 /wd4355 /wd4996 /wd4624 /wd4291 /wd4251 /wd4141 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>version.lib;clangFrontend.lib;clangDriver.lib;clangSerialization.lib;clangCodeGen.lib;clangParse.lib;clangSema.lib;clangAnalysis.lib;clangEdit.lib;clangAST.lib;clangLex.lib;clangBasic.lib;clangIndex.lib;LLVMLinker.lib;LLVMipo.lib;LLVMVectorize.lib;LLVMBitWriter.lib;LLVMIRReader.lib;LLVMAsmParser.lib;LLVMOption.lib;LLVMInstrumentation.lib;LLVMProfileData.lib;LLVMX86AsmParser.lib;LLVMX86Desc.lib;LLVMObject.lib;LLVMMCParser.lib;LLVMBitReader.lib;LLVMX86Info.lib;LLVMX86AsmPrinter.lib;LLVMX86Utils.lib;LLVMCodeGen.lib;LLVMScalarOpts.lib;LLVMInstCombine.lib;LLVMTransformUtils.lib;LLVMAnalysis.lib;LLVMTarget.lib;LLVMMC.lib;LLVMCoverage.lib;LLVMCore.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\lib\Debug_x32\CppSharp.CppParser.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib\ (xcopy /Q /E /Y /I C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib $(TargetDir) &gt; nul) ELSE (xcopy /Q /Y /I C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib $(TargetDir) &gt; nul)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WINDOWS;DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\tools\clang\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\tools\clang\lib;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\build\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\build\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd4267 /wd4146 /wd4244 /wd4800 /wd4345 /wd4355 /wd4996 /wd4624 /wd4291 /wd4251 /wd4141 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>version.lib;clangFrontend.lib;clangDriver.lib;clangSerialization.lib;clangCodeGen.lib;clangParse.lib;clangSema.lib;clangAnalysis.lib;clangEdit.lib;clangAST.lib;clangLex.lib;clangBasic.lib;clangIndex.lib;LLVMLinker.lib;LLVMipo.lib;LLVMVectorize.lib;LLVMBitWriter.lib;LLVMIRReader.lib;LLVMAsmParser.lib;LLVMOption.lib;LLVMInstrumentation.lib;LLVMProfileData.lib;LLVMX86AsmParser.lib;LLVMX86Desc.lib;LLVMObject.lib;LLVMMCParser.lib;LLVMBitReader.lib;LLVMX86Info.lib;LLVMX86AsmPrinter.lib;LLVMX86Utils.lib;LLVMCodeGen.lib;LLVMScalarOpts.lib;LLVMInstCombine.lib;LLVMTransformUtils.lib;LLVMAnalysis.lib;LLVMTarget.lib;LLVMMC.lib;LLVMCoverage.lib;LLVMCore.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\scripts\llvm-cccdd2-windows-vs2015-x86-Debug\build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\lib\Debug_x64\CppSharp.CppParser.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib\ (xcopy /Q /E /Y /I C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib $(TargetDir) &gt; nul) ELSE (xcopy /Q /Y /I C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib $(TargetDir) &gt; nul)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WINDOWS;NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\tools\clang\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\tools\clang\lib;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\build\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\build\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd4267 /wd4146 /wd4244 /wd4800 /wd4345 /wd4355 /wd4996 /wd4624 /wd4291 /wd4251 /wd4141 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>version.lib;clangFrontend.lib;clangDriver.lib;clangSerialization.lib;clangCodeGen.lib;clangParse.lib;clangSema.lib;clangAnalysis.lib;clangEdit.lib;clangAST.lib;clangLex.lib;clangBasic.lib;clangIndex.lib;LLVMLinker.lib;LLVMipo.lib;LLVMVectorize.lib;LLVMBitWriter.lib;LLVMIRReader.lib;LLVMAsmParser.lib;LLVMOption.lib;LLVMInstrumentation.lib;LLVMProfileData.lib;LLVMX86AsmParser.lib;LLVMX86Desc.lib;LLVMObject.lib;LLVMMCParser.lib;LLVMBitReader.lib;LLVMX86Info.lib;LLVMX86AsmPrinter.lib;LLVMX86Utils.lib;LLVMCodeGen.lib;LLVMScalarOpts.lib;LLVMInstCombine.lib;LLVMTransformUtils.lib;LLVMAnalysis.lib;LLVMTarget.lib;LLVMMC.lib;LLVMCoverage.lib;LLVMCore.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\lib\Release_x32\CppSharp.CppParser.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib\ (xcopy /Q /E /Y /I C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib $(TargetDir) &gt; nul) ELSE (xcopy /Q /Y /I C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib $(TargetDir) &gt; nul)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WINDOWS;NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\tools\clang\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\tools\clang\lib;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\build\include;..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\build\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/wd4267 /wd4146 /wd4244 /wd4800 /wd4345 /wd4355 /wd4996 /wd4624 /wd4291 /wd4251 /wd4141 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>version.lib;clangFrontend.lib;clangDriver.lib;clangSerialization.lib;clangCodeGen.lib;clangParse.lib;clangSema.lib;clangAnalysis.lib;clangEdit.lib;clangAST.lib;clangLex.lib;clangBasic.lib;clangIndex.lib;LLVMLinker.lib;LLVMipo.lib;LLVMVectorize.lib;LLVMBitWriter.lib;LLVMIRReader.lib;LLVMAsmParser.lib;LLVMOption.lib;LLVMInstrumentation.lib;LLVMProfileData.lib;LLVMX86AsmParser.lib;LLVMX86Desc.lib;LLVMObject.lib;LLVMMCParser.lib;LLVMBitReader.lib;LLVMX86Info.lib;LLVMX86AsmPrinter.lib;LLVMX86Utils.lib;LLVMCodeGen.lib;LLVMScalarOpts.lib;LLVMInstCombine.lib;LLVMTransformUtils.lib;LLVMAnalysis.lib;LLVMTarget.lib;LLVMMC.lib;LLVMCoverage.lib;LLVMCore.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\build\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\lib\Release_x64\CppSharp.CppParser.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib\ (xcopy /Q /E /Y /I C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib $(TargetDir) &gt; nul) ELSE (xcopy /Q /Y /I C:\git\CppSharp\build\scripts\llvm-cccdd2-windows-vs2015-x86-RelWithDebInfo\lib $(TargetDir) &gt; nul)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\CppParser\AST.h" />
+    <ClInclude Include="..\..\..\src\CppParser\CXXABI.h" />
+    <ClInclude Include="..\..\..\src\CppParser\CppParser.h" />
+    <ClInclude Include="..\..\..\src\CppParser\ELFDumper.h" />
+    <ClInclude Include="..\..\..\src\CppParser\Helpers.h" />
+    <ClInclude Include="..\..\..\src\CppParser\Parser.h" />
+    <ClInclude Include="..\..\..\src\CppParser\Sources.h" />
+    <ClInclude Include="..\..\..\src\CppParser\Target.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\CppParser\AST.cpp" />
+    <ClCompile Include="..\..\..\src\CppParser\Comments.cpp" />
+    <ClCompile Include="..\..\..\src\CppParser\CppParser.cpp" />
+    <ClCompile Include="..\..\..\src\CppParser\Parser.cpp" />
+    <ClCompile Include="..\..\..\src\CppParser\Sources.cpp" />
+    <ClCompile Include="..\..\..\src\CppParser\Target.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\CppParser\premake5.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

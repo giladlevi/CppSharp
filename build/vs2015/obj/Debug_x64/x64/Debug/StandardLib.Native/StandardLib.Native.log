@@ -1,0 +1,54 @@
+﻿  StandardLib.cpp
+c:\git\cppsharp\tests\standardlib\standardlib.h(22): warning C4251: 'TestVectors::IntVector': class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'TestVectors'
+          with
+          [
+              _Ty=int
+          ]
+  c:\git\cppsharp\tests\standardlib\standardlib.h(18): note: see declaration of 'std::vector<int,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=int
+          ]
+c:\git\cppsharp\tests\standardlib\standardlib.h(24): warning C4251: 'TestVectors::IntPtrVector': class 'std::vector<int *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'TestVectors'
+          with
+          [
+              _Ty=int *
+          ]
+  c:\git\cppsharp\tests\standardlib\standardlib.h(24): note: see declaration of 'std::vector<int *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=int *
+          ]
+c:\git\cppsharp\tests\standardlib\standardlib.h(26): warning C4251: 'TestVectors::IntWrapperVector': class 'std::vector<IntWrapper,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'TestVectors'
+          with
+          [
+              _Ty=IntWrapper
+          ]
+  c:\git\cppsharp\tests\standardlib\standardlib.h(26): note: see declaration of 'std::vector<IntWrapper,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=IntWrapper
+          ]
+c:\git\cppsharp\tests\standardlib\standardlib.h(28): warning C4251: 'TestVectors::IntWrapperPtrVector': class 'std::vector<IntWrapper *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'TestVectors'
+          with
+          [
+              _Ty=IntWrapper *
+          ]
+  c:\git\cppsharp\tests\standardlib\standardlib.h(28): note: see declaration of 'std::vector<IntWrapper *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=IntWrapper *
+          ]
+c:\git\cppsharp\tests\standardlib\standardlib.h(30): warning C4251: 'TestVectors::IntWrapperValueTypeVector': class 'std::vector<IntWrapperValueType,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'TestVectors'
+          with
+          [
+              _Ty=IntWrapperValueType
+          ]
+  c:\git\cppsharp\tests\standardlib\standardlib.h(30): note: see declaration of 'std::vector<IntWrapperValueType,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=IntWrapperValueType
+          ]
+     Creating library ..\lib\Debug_x64\StandardLib.Native.lib and object ..\lib\Debug_x64\StandardLib.Native.exp
+  StandardLib.Native.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Debug_x64\StandardLib.Native.dll
+  StandardLib.Native.vcxproj -> ..\lib\Debug_x64\StandardLib.Native.pdb (Full PDB)

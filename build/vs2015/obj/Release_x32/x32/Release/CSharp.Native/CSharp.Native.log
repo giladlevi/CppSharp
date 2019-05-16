@@ -1,0 +1,6 @@
+﻿  CSharp.cpp
+c:\git\cppsharp\tests\csharp\CSharp.h(33): warning C4251: 'Foo::templateInAnotherUnit': class 'TemplateInAnotherUnit<int>' needs to have dll-interface to be used by clients of class 'Foo'
+  c:\git\cppsharp\tests\csharp\CSharp.h(33): note: see declaration of 'TemplateInAnotherUnit<int>'
+     Creating library ..\lib\Release_x32\CSharp.Native.lib and object ..\lib\Release_x32\CSharp.Native.exp
+  CSharp.Native.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Release_x32\CSharp.Native.dll
+  CSharp.Native.vcxproj -> ..\lib\Release_x32\CSharp.Native.pdb (Full PDB)

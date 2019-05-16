@@ -1,0 +1,25 @@
+﻿  
+  Generating bindings for Common (CLI)
+  Looking for tests in: C:\Git\CppSharp\tests\Common
+  C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.UWP.0
+  Error parsing 'AnotherUnit.h, Common.h'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include\crtdefs.h(10,10): fatal: 'corecrt.h' file not found
+  CppSharp has encountered an error while parsing code.
+  
+  Generating bindings for Common (CSharp)
+  Looking for tests in: C:\Git\CppSharp\tests\Common
+  C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.UWP.0
+  Error parsing 'AnotherUnit.h, Common.h'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include\crtdefs.h(10,10): fatal: 'corecrt.h' file not found
+  CppSharp has encountered an error while parsing code.
+  AnotherUnit.cpp
+  Common.cpp
+C:\Git\CppSharp\tests\Common\Common.h(767): warning C4251: 'HasStdString::s': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'HasStdString'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+..\gen\Common\Common.cpp(185): warning C4244: '=': conversion from 'wchar_t' to 'char', possible loss of data
+..\gen\Common\Common.cpp(386): warning C4244: 'argument': conversion from 'wchar_t' to 'char', possible loss of data
+..\gen\Common\Common.cpp(3680): warning C4244: '=': conversion from 'wchar_t' to 'char', possible loss of data
+  Generating Code...
+     Creating library ..\lib\Release_x32\Common.CLI.lib and object ..\lib\Release_x32\Common.CLI.exp
+  Common.CLI.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Release_x32\Common.CLI.dll
+  Common.CLI.vcxproj -> ..\lib\Release_x32\Common.CLI.pdb (Full PDB)

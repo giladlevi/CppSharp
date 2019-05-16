@@ -1,0 +1,84 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CLI.CLI, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface ICppInstance: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Properties:
+    IntPtr __Instance 'get set' : 
+  Methods:
+    get___Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set___Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class CLI.Types: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CLI.Types): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Types*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+    System.IDisposable
+  Properties:
+    IntPtr __Instance 'get set' : 
+    Types* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(Types*): PrivateScope, Public, HideBySig, SpecialName
+    get___Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set___Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    __CreateInstance(IntPtr): PrivateScope, Public, Static, HideBySig
+    AttributedSum(Int32, Int32): PrivateScope, Public, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class CLI.TestProtectedDestructors: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CLI.TestProtectedDestructors): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(TestProtectedDestructors*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+  Properties:
+    IntPtr __Instance 'get set' : 
+    TestProtectedDestructors* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(TestProtectedDestructors*): PrivateScope, Public, HideBySig, SpecialName
+    get___Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set___Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    __CreateInstance(IntPtr): PrivateScope, Public, Static, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class CLI.Date: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CLI.Date): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Date*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+    System.IDisposable
+  Properties:
+    Int32 Yr   'get set' : 
+    Int32 Da   'get set' : 
+    Int32 Mo   'get set' : 
+    IntPtr __Instance 'get set' : 
+    Date* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(Date*): PrivateScope, Public, HideBySig, SpecialName
+    get___Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set___Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    __CreateInstance(IntPtr): PrivateScope, Public, Static, HideBySig
+    get_Mo(): PrivateScope, Public, HideBySig, SpecialName
+    set_Mo(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Da(): PrivateScope, Public, HideBySig, SpecialName
+    set_Da(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Yr(): PrivateScope, Public, HideBySig, SpecialName
+    set_Yr(Int32): PrivateScope, Public, HideBySig, SpecialName
+    TestStdString(String): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class CLI.CLI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    TestFreeFunction(): PrivateScope, Public, Static, HideBySig

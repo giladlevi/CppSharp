@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\StandardLib.Gen.exe
+C:\git\CppSharp\build\vs2015\lib\Release_x32\StandardLib.Gen.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\StandardLib.Gen\StandardLib.Gen.exe
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\StandardLib.Gen\StandardLib.Gen.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\StandardLib.Gen\StandardLib.Gen.csprojResolveAssemblyReference.cache

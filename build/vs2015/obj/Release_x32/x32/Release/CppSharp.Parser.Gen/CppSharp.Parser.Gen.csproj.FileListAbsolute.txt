@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Parser.Gen.exe
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Parser.Gen.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Parser.Gen\CppSharp.Parser.Gen.csprojResolveAssemblyReference.cache
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Parser.Gen\CppSharp.Parser.Gen.exe
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Parser.Gen\CppSharp.Parser.Gen.pdb

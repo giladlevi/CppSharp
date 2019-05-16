@@ -1,0 +1,1 @@
+C:\git\CppSharp\build\vs2015\obj\Release_x64\x64\Release\CppSharp.Generator\CppSharp.Generator.csprojResolveAssemblyReference.cache

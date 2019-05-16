@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CSharp.Gen.exe
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CSharp.Gen.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CSharp.Gen\CSharp.Gen.csprojResolveAssemblyReference.cache
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CSharp.Gen\CSharp.Gen.exe
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CSharp.Gen\CSharp.Gen.pdb

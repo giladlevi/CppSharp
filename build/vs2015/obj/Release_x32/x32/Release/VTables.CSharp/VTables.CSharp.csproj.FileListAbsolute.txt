@@ -1,0 +1,4 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\VTables.CSharp.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\VTables.CSharp.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\VTables.CSharp\VTables.CSharp.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\VTables.CSharp\VTables.CSharp.pdb

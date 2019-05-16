@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\NamespacesBase.CSharp.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\NamespacesBase.CSharp.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\NamespacesBase.CSharp\NamespacesBase.CSharp.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\NamespacesBase.CSharp\NamespacesBase.CSharp.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\NamespacesBase.CSharp\NamespacesBase.CSharp.csprojResolveAssemblyReference.cache

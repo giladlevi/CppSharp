@@ -1,0 +1,9 @@
+﻿  Parser.cpp
+c:\git\cppsharp\src\cppparser\parser.h(10): fatal error C1083: Cannot open include file: 'llvm/Object/Archive.h': No such file or directory
+  CppParser.cpp
+c:\git\cppsharp\src\cppparser\parser.h(10): fatal error C1083: Cannot open include file: 'llvm/Object/Archive.h': No such file or directory
+  Comments.cpp
+c:\git\cppsharp\src\cppparser\parser.h(10): fatal error C1083: Cannot open include file: 'llvm/Object/Archive.h': No such file or directory
+  AST.cpp
+c:\git\cppsharp\src\cppparser\llvm\support\compiler.h(18): fatal error C1083: Cannot open include file: 'llvm/Config/llvm-config.h': No such file or directory
+  Generating Code...

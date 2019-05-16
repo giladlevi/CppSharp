@@ -1,0 +1,4 @@
+﻿  '"C:\Git\CppSharp\build\vs2015\lib\Debug_x64\StandardLib.Gen.exe"' is not recognized as an internal or external command,
+  operable program or batch file.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(123,5): error MSB3073: The command ""C:\Git\CppSharp\build\vs2015\lib\Debug_x64\StandardLib.Gen.exe"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(123,5): error MSB3073: :VCEnd" exited with code 9009.

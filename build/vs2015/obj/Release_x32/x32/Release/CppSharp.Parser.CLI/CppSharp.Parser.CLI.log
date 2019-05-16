@@ -1,0 +1,4 @@
+﻿  .NETFramework,Version=v4.5.AssemblyAttributes.cpp
+     Creating library ..\lib\Release_x32\CppSharp.Parser.CLI.lib and object ..\lib\Release_x32\CppSharp.Parser.CLI.exp
+  CppSharp.Parser.CLI.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Release_x32\CppSharp.Parser.CLI.dll
+  CppSharp.Parser.CLI.vcxproj -> ..\lib\Release_x32\CppSharp.Parser.CLI.pdb (Full PDB)

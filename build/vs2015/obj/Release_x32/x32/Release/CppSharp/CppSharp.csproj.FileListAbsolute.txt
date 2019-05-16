@@ -1,0 +1,7 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp\CppSharp.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp\CppSharp.pdb
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp\CppSharp.csprojAssemblyReference.cache
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp\CppSharp.csproj.CoreCompileInputs.cache
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp\CppSharp.csproj.CopyComplete

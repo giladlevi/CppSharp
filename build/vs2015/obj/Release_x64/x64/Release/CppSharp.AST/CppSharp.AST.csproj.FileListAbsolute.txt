@@ -1,0 +1,4 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x64\CppSharp.AST.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x64\CppSharp.AST.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x64\x64\Release\CppSharp.AST\CppSharp.AST.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x64\x64\Release\CppSharp.AST\CppSharp.AST.pdb

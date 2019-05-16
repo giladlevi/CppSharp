@@ -1,0 +1,7 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\SDL.exe
+C:\git\CppSharp\build\vs2015\lib\Release_x32\SDL.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\SDL\SDL.exe
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\SDL\SDL.pdb
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\SDL\SDL.csprojAssemblyReference.cache
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\SDL\SDL.csproj.CoreCompileInputs.cache
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\SDL\SDL.csproj.CopyComplete

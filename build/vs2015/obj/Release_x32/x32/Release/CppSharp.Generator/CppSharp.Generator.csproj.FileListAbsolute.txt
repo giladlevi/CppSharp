@@ -1,0 +1,7 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Generator.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\CppSharp.Generator.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Generator\CppSharp.Generator.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Generator\CppSharp.Generator.pdb
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Generator\CppSharp.Generator.csprojAssemblyReference.cache
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Generator\CppSharp.Generator.csproj.CoreCompileInputs.cache
+C:\Git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\CppSharp.Generator\CppSharp.Generator.csproj.CopyComplete

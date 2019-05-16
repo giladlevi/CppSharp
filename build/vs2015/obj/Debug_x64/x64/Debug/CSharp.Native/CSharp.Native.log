@@ -1,0 +1,13 @@
+﻿  CSharpTemplates.cpp
+c:\git\cppsharp\tests\csharp\csharptemplates.h(65): warning C4251: 'TemplateSpecializer::hasDefaultTemplateArgument': class 'HasDefaultTemplateArgument<int,IndependentFields<int>>' needs to have dll-interface to be used by clients of class 'TemplateSpecializer'
+  c:\git\cppsharp\tests\csharp\csharptemplates.h(65): note: see declaration of 'HasDefaultTemplateArgument<int,IndependentFields<int>>'
+c:\git\cppsharp\tests\csharp\csharptemplates.h(68): warning C4251: 'TemplateSpecializer::templateInAnotherUnit': class 'TemplateInAnotherUnit<float>' needs to have dll-interface to be used by clients of class 'TemplateSpecializer'
+  c:\git\cppsharp\tests\csharp\csharptemplates.h(68): note: see declaration of 'TemplateInAnotherUnit<float>'
+  CSharp.cpp
+c:\git\cppsharp\tests\csharp\csharp.h(33): warning C4251: 'Foo::templateInAnotherUnit': class 'TemplateInAnotherUnit<int>' needs to have dll-interface to be used by clients of class 'Foo'
+  c:\git\cppsharp\tests\csharp\csharp.h(33): note: see declaration of 'TemplateInAnotherUnit<int>'
+  AnotherUnit.cpp
+  Generating Code...
+     Creating library ..\lib\Debug_x64\CSharp.Native.lib and object ..\lib\Debug_x64\CSharp.Native.exp
+  CSharp.Native.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Debug_x64\CSharp.Native.dll
+  CSharp.Native.vcxproj -> ..\lib\Debug_x64\CSharp.Native.pdb (Full PDB)

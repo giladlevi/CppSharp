@@ -1,0 +1,9 @@
+﻿  
+  Generating bindings for CLI (CLI)
+  Looking for tests in: C:\Git\CppSharp\tests\CLI
+  C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.UWP.0
+  Error parsing 'CLI.h'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include\crtdefs.h(10,10): fatal: 'corecrt.h' file not found
+  CppSharp has encountered an error while parsing code.
+  CLI.CLI.vcxproj -> C:\Git\CppSharp\build\vs2015\projects\..\lib\Release_x32\CLI.CLI.dll
+  CLI.CLI.vcxproj -> ..\lib\Release_x32\CLI.CLI.pdb (Full PDB)

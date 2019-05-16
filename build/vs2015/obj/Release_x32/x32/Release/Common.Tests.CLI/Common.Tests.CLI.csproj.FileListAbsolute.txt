@@ -1,0 +1,5 @@
+C:\git\CppSharp\build\vs2015\lib\Release_x32\Common.Tests.CLI.dll
+C:\git\CppSharp\build\vs2015\lib\Release_x32\Common.Tests.CLI.pdb
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\Common.Tests.CLI\Common.Tests.CLI.csprojResolveAssemblyReference.cache
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\Common.Tests.CLI\Common.Tests.CLI.dll
+C:\git\CppSharp\build\vs2015\obj\Release_x32\x32\Release\Common.Tests.CLI\Common.Tests.CLI.pdb
